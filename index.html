@@ -1,121 +1,287 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>원스탑솔루션서비스 허브</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.8; }
-    h1 { text-align: center; margin-bottom: 40px; }
-    h2 { margin-top: 30px; color: #333; }
-    a { text-decoration: none; color: #0044cc; margin-right: 10px; }
-    a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-  <h1>프린터 드라이버</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.ico" />
+    <title>원스탑솔루션서비스 허브</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1300px;
+        margin: 40px auto;
+        line-height: 1.8;
+        color: #222;
+      }
 
-  <!-- HP -->
-  <h2>HP</h2>
-  <p>
-    <a href="https://example.com/hp8100.exe" target="_blank">8100</a>
-    <a href="https://example.com/hp8210.exe" target="_blank">8210</a>
-    <a href="https://example.com/hp8610.exe" target="_blank">8610</a>
-    <a href="https://example.com/hp8710.exe" target="_blank">8710</a>
-    <a href="https://example.com/hp9010.exe" target="_blank">9010</a>
-    <a href="https://example.com/hp7510.exe" target="_blank">7510</a>
-    <a href="https://example.com/hp7720.exe" target="_blank">7720</a>
-    <a href="https://example.com/hp7740.exe" target="_blank">7740</a>
-    <a href="https://example.com/hp6962.exe" target="_blank">6962</a>
-    <a href="https://example.com/hpk550.exe" target="_blank">K550</a>
-    <a href="https://example.com/hp9800.exe" target="_blank">9800</a>
-    <a href="https://example.com/hp_scan.exe" target="_blank">HP 스캔 프로그램</a>
-  </p>
-  <p>
-    <a href="https://example.com/hpX451DN.exe" target="_blank">X451DN</a>
-    <a href="https://example.com/hpX476DN.exe" target="_blank">X476DN</a>
-    <a href="https://example.com/hpX452DN.exe" target="_blank">X452DN</a>
-    <a href="https://example.com/hpX477DW.exe" target="_blank">X477DW</a>
-    <a href="https://example.com/hpX377DW.exe" target="_blank">X377DW</a>
-    <a href="https://example.com/hp_plotter.exe" target="_blank">플로터 T730/T830/T120/T520 통합</a>
-  </p>
+      h1 {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 32px;
+        color: #111;
+      }
 
-  <!-- EPSON -->
-  <h2>EPSON</h2>
-  <p>
-    <a href="#">C5790</a>
-    <a href="#">C5710</a>
-    <a href="#">C5790 / C5710 Scan</a>
-    <a href="#">C5890</a>
-    <a href="#">C579</a>
-    <a href="#">C579R Scan</a>
-    <a href="#">C5290</a>
-    <a href="#">6290/6291</a>
-    <a href="#">6290/6291 Scan</a>
-  </p>
-  <p>
-    <a href="#">C400</a>
-    <a href="#">C4000</a>
-    <a href="#">C5000</a>
-    <a href="#">Epson 5790/5710 Scan</a>
-    <a href="#">Epson 579R Scan</a>
-    <a href="#">C400 Scan</a>
-    <a href="#">C4000-5000 Scan</a>
-    <a href="#">C400 C5000 Scan FTP</a>
-  </p>
-  <p>
-    <a href="#">전자수입인지 프로그램</a>
-    <a href="#">틴텍인증 프로그램</a>
-    <a href="#">EPSON Universal</a>
-  </p>
+      /* 큰 카테고리 제목 */
+      h2 {
+        margin-top: 40px;
+        padding: 10px 15px;
+        background: #0044cc;
+        color: #fff;
+        border-radius: 6px;
+        font-size: 22px;
+      }
 
-  <!-- Canon -->
-  <h2>Canon</h2>
-  <p>
-    <a href="#">212</a>
-    <a href="#">223</a>
-    <a href="#">224</a>
-    <a href="#">423</a>
-    <a href="#">7092</a>
-  </p>
+      /* 브랜드/세부 구분 */
+      h3 {
+        margin-top: 20px;
+        margin-left: 15px;
+        color: #0044cc;
+        font-size: 18px;
+        border-left: 4px solid #0044cc;
+        padding-left: 8px;
+      }
 
-  <!-- 신도/미놀타 -->
-  <h2>신도/미놀타</h2>
-  <p>
-    <a href="#">D410</a>
-    <a href="#">D400</a>
-    <a href="#">C225</a>
-    <a href="#">N600</a>
-    <a href="#">N501</a>
-    <a href="#">미놀타 FTP</a>
-  </p>
+      /* 링크 */
+      a {
+        text-decoration: none;
+        color: #0066cc;
+        margin-right: 15px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #cc0000;
+      }
 
-  <!-- 리코 -->
-  <h2>리코</h2>
-  <p>
-    <a href="#">리코 업데이트 프로그램</a>
-    <a href="#">리코 OK카운터 프로그램</a>
-    <a href="#">FTP 리코 간편스캔</a>
-  </p>
+      /* 링크 그룹 */
+      p {
+        margin-left: 40px;
+        margin-bottom: 10px;
+      }
 
-  <!-- 삼성 -->
-  <h2>삼성</h2>
-  <p>
-    <a href="#">SL-J3520W</a>
-    <a href="#">SL-J3560FW</a>
-    <a href="#">SL-5520</a>
-    <a href="#">SL-J5560</a>
-  </p>
-  <p>
-    <a href="#">X3220</a>
-    <a href="#">SCX-8123 8128</a>
-    <a href="#">K4250RX</a>
-    <a href="#">K4300LX</a>
-    <a href="#">K401LX</a>
-    <a href="#">X4225</a>
-    <a href="#">X4255</a>
-    <a href="#">X4305</a>
-    <a href="#">K6300 (FTP scan)</a>
-    <a href="#">SL-X6300 (FTP scan)</a>
-  </p>
-</body>
+      footer {
+        max-width: 1300px;
+        margin: 60px auto 20px;
+        padding-top: 12px;
+        border-top: 1px solid #e5e5e5;
+        color: #666;
+        font-size: 13px;
+        text-align: center;
+      }
+      .footer-inner span + span::before {
+        content: " · ";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>원스탑솔루션서비스 허브</h1>
+
+    <!-- 프린터 드라이버 -->
+    <h2>프린터 드라이버</h2>
+
+    <h3>HP</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/f40b684587b4f807d45dabc7084a4c40/68d4d682/657465726e616c3b6f6e6573746f704f31/diVs7RSCPL0v2kZsiqdw7LXYAHrc3LS/OJ7720_64.exe"
+        >7720</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/e475b6fe95f1addf320d92d90bb46c97/68d4d6d0/657465726e616c3b6f6e6573746f704f31/yOlkAujABbN4mzsEZ8Wz403hEA0WL6l/OJ7740_64.exe"
+        >7740</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/eb678ffeb3143a2062c22de79c84d13a/68d4d6ed/657465726e616c3b6f6e6573746f704f31/kD2XfcISD8vJae413oWPn60lfgtH8Qh/OJ8610_64bit.exe"
+        >8610</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/1da26a94225a76ca2ef003a7770c1e13/68d4d6fa/657465726e616c3b6f6e6573746f704f31/OWYs86HvZ3oMoYbXA0087MnoG53d3fP/OJ8710_64bit.exe"
+        >8710</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/67a089653fb2761710c9428c687c9b41/68d4d707/657465726e616c3b6f6e6573746f704f31/3LTswpC9lVV7VeCIH8bH827bt6RYTz7/OJP9010_Basicx64_49.8.4575.exe"
+        >9010</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/1ce6dc3f1c8886ca617ac430477fabbd/68d4d715/657465726e616c3b6f6e6573746f704f31/a3jGo3X02R5KiZaHjD2V3kyCc9JT99k/K550 9800.zip"
+        >K550</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/ff66be182b808a1d06fdf31dd5ecbef0/68d4d723/657465726e616c3b6f6e6573746f704f31/zFn1V795dn8UVehml46MMnEpefp7E7Y/HPEasyStart_17_2_17.exe"
+        >통합드라이버</a
+      >
+    </p>
+
+    <h3>코니카 미놀타</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/2fcdcec4cadefb8ecaca1333fdd7bce8/68d4d733/657465726e616c3b6f6e6573746f704f31/0VpMomRxegb5Yy8n5brKu6BQt2839m3/C025.zip"
+        >C025</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/d90bd62217c24bbb585d4776e3b7058e/68d4d741/657465726e616c3b6f6e6573746f704f31/OFg48j2zBDKkl66fpJ1598h6K91WFK5/C368.zip"
+        >C368</a
+      >
+    </p>
+
+    <h3>신도</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/6e0d956cf098580c2aa38b8e0df984f8/68d4d752/657465726e616c3b6f6e6573746f704f31/3ekRJtvJpaL9O0A3VQwqiGzHXcEw92s/D420.zip"
+        >D420</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/1f4cb01460c9bf6304b5634d8a614499/68d4d75e/657465726e616c3b6f6e6573746f704f31/fArpv0UU6VPdA4kcRwKNfT0Y02ABhCQ/D450.zip"
+        >D450</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/d43f6e5027e762a62aa69663d0a9ee4d/68d4d76d/657465726e616c3b6f6e6573746f704f31/1uFArDCOTJ4rP605eWS4NUGZ7UnOkvE/D470.zip"
+        >D470</a
+      >
+    </p>
+
+    <h3>삼성</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/d7b87e277a5238fa9f8f82bb6f349864/68d4d77f/657465726e616c3b6f6e6573746f704f31/8356H4h22D1j1Yy25Oml98ne5Q644CE/삼성통합프린터드라이버.exe"
+        >통합드라이버</a
+      >
+    </p>
+
+    <!-- 오피스 프로그램 -->
+    <h2>스캔</h2>
+    <h3>HP</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/59b126dae258768c0fa200aab2d0781b/68d4d7c8/657465726e616c3b6f6e6573746f704f31/fHKoMw86k02BY3JTFdB1S3Uvy9l8Xas/HPScan Twain.zip"
+        >HPScan Twain</a
+      >
+    </p>
+    <h3>코니카 미놀타 / 신도</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/f6b21104c10d2f3aa2c656dd4d051dbe/68d4d7ff/657465726e616c3b6f6e6573746f704f31/39FeE6j8xX9416hbA2bUbMLNWJ28NP5/FTPUtility.zip"
+        >FTPUtility</a
+      >
+    </p>
+    <h3>삼성</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/d3e9bf38881d0c04f8ac64f7c0472cde/68d4d82e/657465726e616c3b6f6e6573746f704f31/LZfu5YgmCRZ2jpTXc2ed6y4IUe7AtOG/ScantoPCLite_V1.2.14.0.exe"
+        >ScantoPCLite</a
+      >
+    </p>
+
+    <!-- 오피스 프로그램 -->
+    <h2>프로그램</h2>
+    <h3>Microsoft Office</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/b75e93199dcc7a93796f5f50c792e458/68d4d84e/657465726e616c3b6f6e6573746f704f31/0MLBn5Awb2NxzBPEGE1uCHpkA9S7313/Microsoft Office LTSC 2021 Professional Plus _ Standard + Visio + Project 16.0.14332.20324.ISO"
+        >Office 2021</a
+      >
+    </p>
+    <h3>한글과컴퓨터</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/732203bd4f331e8c0b214808689468ed/68d4d869/657465726e616c3b6f6e6573746f704f31/mlI3rCE1r2VJa7ZmF0RQV95ctQUq9H3/한글 2020.zip"
+        >한글 2020</a
+      >
+    </p>
+    <h3>문서 도구</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/e451f1b6d423248243d7c086eb855a07/68d4d892/657465726e616c3b6f6e6573746f704f31/4Qy923qZ00v388lC814p99P3QSHkzjS/Adobe Acrobat Pro 2025 v25.1.20643 (x64).zip"
+        >Adobe Acrobat Pro 2025</a
+      >
+    </p>
+    <h3>디자인</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/d2cb626f22bef2b5368891414d4a1e65/68d4d8d0/657465726e616c3b6f6e6573746f704f31/84nF5JggYB7BW8dYhI8ME5D9gtk6nM9/Adobe Master Collection CC 2020 Lite Edition v3.0.1 by Remiz.iso"
+        >Adobe Master 2020(포토샵, 일러스트)</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/987d4aa0c7ac904b6cdf34e9b2cf4d87/68d4dcd3/657465726e616c3b6f6e6573746f704f31/N0ObRc2CmRKv0wsri892BHvHu8aAv0F/AutoCAD 2021.zip"
+        >AutoCAD 2021</a
+      >
+    </p>
+
+    <!-- 유틸리티 -->
+    <h2>유틸리티</h2>
+    <h3>인증</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/a0c153b9466f4d6f267d5a1c2a6a7340/68d4dde9/657465726e616c3b6f6e6573746f704f31/bqQ5knShT00jIGLPQwaKM0zq15v7nr3/AAct_Tools.zip"
+        >AActTools</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/4b84bd363bb10c55de3ed080a6346910/68d4ddf4/657465726e616c3b6f6e6573746f704f31/56SDG1pTOE8724Lkal4H3W8OZ1566hc/Powershell 오피스 인증.txt"
+        >Powershell 오피스</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/a42a8cefe6f146ace51a3c453cc1b50d/68d4de0d/657465726e616c3b6f6e6573746f704f31/E082hqhv7QYRtKy7o8Ot3XO5etpLU56/윈도우 cmd 인증.txt"
+        >CMD 윈도우</a
+      >
+    </p>
+    <h3>기타</h3>
+    <p>
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/51a411ec1c8dc7162e668a3581a967ee/68d4e0da/657465726e616c3b6f6e6573746f704f31/5al9XT6w3Rm9ZMF42SE1i916FQ0BdMn/바로가기프로그램.zip"
+        >원스탑 바로가기 만들기</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/e5a9882960b80f69ab25b74630e49910/68d4df7b/657465726e616c3b6f6e6573746f704f31/G2bB60R9j54NT903nQC44IfjZ3H8r96/WIN_EPM_V2.00.01.34.exe"
+        >삼성 Easy Printer Manager</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/b4cd24cfb84d50d44a2142ae28c0b104/68d4df8a/657465726e616c3b6f6e6573746f704f31/TTw24M47E44Ejz4iplU3g2719YEnFNN/clear_spooler.bat"
+        >Clear_Spooler</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/f3fc77dc5e139173a0dba736021a5759/68d4df95/657465726e616c3b6f6e6573746f704f31/DB1DK78q7to8VI26K1If1shUnBm6lh8/geek.zip"
+        >프로그램 완전 삭제 툴</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/37d929c89751574cd31482c55cbf5ac3/68d4dfb7/657465726e616c3b6f6e6573746f704f31/89nb8Umnt7pRR2az10Bo5ZqHFq6jHQy/Windows11_gpedit.bat"
+        >gpedit.msc 설치</a
+      >
+      <a
+        href="http://Onestopss.ipdisk.co.kr:14222/dl/1dec4dacc92205192666b167df74f213/68d4dfc2/657465726e616c3b6f6e6573746f704f31/5jv89Qz8MCA03xctGwz93Zi744PL5Y4/wnetwatcher.zip"
+        >IP 스캔</a
+      >
+    </p>
+  </body>
+
+  <footer>
+    <div class="footer-inner">
+      <span id="made-where"></span>
+      <span id="made-by"></span>
+      <span id="last-updated"></span>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      // ↓ 여기 두 줄만 너에게 맞게 바꿔 써!
+      const MAKER = "KSR"; // 만든이
+      const PLACE = "원스탑솔루션서비스"; // 만든 곳(예: Busan, Korea)
+
+      document.getElementById(
+        "made-where"
+      ).textContent = `Copyright © 2025 ${PLACE}. All rights reserved.`;
+      document.getElementById("made-by").textContent = `Made by ${MAKER}`;
+
+      // 최종 수정 시각 (GitHub Pages에선 최근 커밋 시각 기준이 되는 경우가 많음)
+      const ts = Date.parse(document.lastModified);
+      const formatted = isNaN(ts)
+        ? document.lastModified
+        : new Date(ts).toLocaleString("ko-KR", {
+            timeZone: "Asia/Seoul",
+            dateStyle: "long",
+            timeStyle: "short",
+          });
+      document.getElementById(
+        "last-updated"
+      ).textContent = `최종 수정: ${formatted}`;
+    })();
+  </script>
 </html>
