@@ -268,6 +268,17 @@
   </footer>
   <script>
     (function () {
+      const PASSWORD = "onestop@123"; // ← 원하는 비밀번호로 바꾸세요
+      const entered = prompt("이 페이지를 보려면 비밀번호를 입력하세요.");
+
+      if (entered !== PASSWORD) {
+        // 틀리면 빈 페이지(또는 안내문) 보여주고 더이상 내용 안 보이게
+        document.documentElement.innerHTML =
+          "<h2 style='text-align:center;margin-top:40vh'>비밀번호가 틀렸습니다.</h2>";
+      }
+      // 맞으면 그대로 페이지가 보임
+    })();
+    (function () {
       // ↓ 여기 두 줄만 너에게 맞게 바꿔 써!
       const MAKER = "KSR"; // 만든이
       const PLACE = "원스탑솔루션서비스"; // 만든 곳(예: Busan, Korea)
